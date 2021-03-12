@@ -1,0 +1,29 @@
+PODS:
+  - GoogleMaps (4.1.0):
+    - GoogleMaps/Maps (= 4.1.0)
+  - GoogleMaps/Base (4.1.0)
+  - GoogleMaps/Maps (4.1.0):
+    - GoogleMaps/Base
+  - GooglePlaces (4.1.0):
+    - GoogleMaps/Base (= 4.1.0)
+  - SwiftSpinner (2.1.0)
+
+DEPENDENCIES:
+  - GoogleMaps (= 4.1.0)
+  - GooglePlaces (= 4.1.0)
+  - SwiftSpinner
+
+SPEC REPOS:
+  trunk:
+    - GoogleMaps
+    - GooglePlaces
+    - SwiftSpinner
+
+SPEC CHECKSUMS:
+  GoogleMaps: 008e2c80e38605b56b560e8deb73d4194ff30bef
+  GooglePlaces: a058b776259c13e1323c9ff135549cb1b13ad8e7
+  SwiftSpinner: 0f15c006307f8d8bbac075638927ec1361b565d7
+
+PODFILE CHECKSUM: 4bddcfaa3d5dbde63c65abc5aea3c4e3228e05e5
+
+COCOAPODS: 1.8.3

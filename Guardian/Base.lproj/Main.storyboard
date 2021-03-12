@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qA3-V7-W6K">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BYekan.ttf">
+            <string>BYekan</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--ورود-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Guardian" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="نام کاربری" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ngj-ee-qJL">
+                                <rect key="frame" x="16" y="67" width="288" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="GRF-Fh-Xtk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="رمز عبور" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oj8-5d-bjF">
+                                <rect key="frame" x="16" y="130" width="288" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ecw-QU-yvC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="شماره تلفن همراه" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yII-u8-6gh">
+                                <rect key="frame" x="16" y="193" width="288" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="cDm-bb-ah9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" textContentType="tel"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPZ-DA-kJU">
+                                <rect key="frame" x="95" y="268" width="130" height="51"/>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.42745098040000001" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="TUy-K1-Wlm"/>
+                                    <constraint firstAttribute="height" constant="51" id="VA9-IQ-ayG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="23"/>
+                                <state key="normal" title="ورود">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="primaryTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gz7-1a-XGO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogc-s8-pbR">
+                                <rect key="frame" x="95" y="335" width="130" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Ffl-SR-bsd"/>
+                                    <constraint firstAttribute="width" constant="130" id="bsR-UA-INs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="23"/>
+                                <state key="normal" title="ثبت نام"/>
+                                <connections>
+                                    <action selector="secondaryTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gh4-gw-J0E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTc-OU-Mm6">
+                                <rect key="frame" x="80" y="497" width="160" height="51"/>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.42745098040000001" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="Rxc-KH-eeu"/>
+                                    <constraint firstAttribute="height" constant="51" id="dEB-Wf-E37"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="23"/>
+                                <state key="normal" title="درباره‌ی گاردین">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="aboutTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tx1-s5-v2s"/>
+                                    <action selector="logoutTapped:" destination="bbc-V1-KGX" eventType="touchUpInside" id="ABk-OM-wXx"/>
+                                    <action selector="websiteClicked:" destination="R5w-Hn-4Ht" eventType="touchUpInside" id="noO-IV-ZC2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oTc-OU-Mm6" secondAttribute="bottom" constant="20" id="1Lq-GV-kU7"/>
+                            <constraint firstItem="Ngj-ee-qJL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="4N3-rp-lqw"/>
+                            <constraint firstItem="oTc-OU-Mm6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6zb-Lb-xOc"/>
+                            <constraint firstItem="yII-u8-6gh" firstAttribute="top" secondItem="Oj8-5d-bjF" secondAttribute="bottom" constant="23" id="7DZ-kL-Q9X"/>
+                            <constraint firstItem="fPZ-DA-kJU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Qj-Un-PRE"/>
+                            <constraint firstItem="fPZ-DA-kJU" firstAttribute="top" secondItem="yII-u8-6gh" secondAttribute="bottom" constant="35" id="8ZW-Wc-4HA"/>
+                            <constraint firstItem="Oj8-5d-bjF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="C55-YA-6UC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ngj-ee-qJL" secondAttribute="trailing" constant="16" id="Wqq-BX-Bm8"/>
+                            <constraint firstItem="ogc-s8-pbR" firstAttribute="top" secondItem="fPZ-DA-kJU" secondAttribute="bottom" constant="16" id="YBn-jg-Tqq"/>
+                            <constraint firstItem="ogc-s8-pbR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cQi-vK-Nw9"/>
+                            <constraint firstItem="yII-u8-6gh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="dXG-sl-cnh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yII-u8-6gh" secondAttribute="trailing" constant="16" id="gfc-4M-RS9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Oj8-5d-bjF" secondAttribute="trailing" constant="16" id="i0O-4B-tZJ"/>
+                            <constraint firstItem="Ngj-ee-qJL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="pv8-8N-kOh"/>
+                            <constraint firstItem="Oj8-5d-bjF" firstAttribute="top" secondItem="Ngj-ee-qJL" secondAttribute="bottom" constant="23" id="yWZ-BB-HZP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ورود" id="TZm-30-GVz"/>
+                    <connections>
+                        <outlet property="btnAbout" destination="oTc-OU-Mm6" id="QIF-xj-Nhx"/>
+                        <outlet property="btnPrimary" destination="fPZ-DA-kJU" id="nxM-qd-hqr"/>
+                        <outlet property="btnSecondary" destination="ogc-s8-pbR" id="hK9-Dz-LZt"/>
+                        <outlet property="txtPassword" destination="Oj8-5d-bjF" id="Fdi-4f-zZh"/>
+                        <outlet property="txtPhoneNumber" destination="yII-u8-6gh" id="9ks-JD-4OG"/>
+                        <outlet property="txtUsername" destination="Ngj-ee-qJL" id="Lfk-sw-8oX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="نام کاربری" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B7t-d9-Rkj">
+                    <rect key="frame" x="0.0" y="0.0" width="288" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="CgO-qu-0qH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="رمز عبور" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zVV-Xh-ffp">
+                    <rect key="frame" x="0.0" y="0.0" width="288" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="mn4-wU-120"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUv-ZK-zUx">
+                    <rect key="frame" x="0.0" y="0.0" width="130" height="51"/>
+                    <color key="backgroundColor" red="0.24313725489999999" green="0.42745098040000001" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="51" id="3KC-56-huX"/>
+                        <constraint firstAttribute="width" constant="130" id="Lu1-Tg-P1d"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="23"/>
+                    <state key="normal" title="ورود">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="نام کاربری" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4W6-0y-Zgx">
+                    <rect key="frame" x="0.0" y="0.0" width="288" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="a7e-er-1cI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="رمز عبور" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sfC-sW-8LE">
+                    <rect key="frame" x="0.0" y="0.0" width="288" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="DQv-CN-1tZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="407-Np-K89">
+                    <rect key="frame" x="0.0" y="0.0" width="130" height="51"/>
+                    <color key="backgroundColor" red="0.24313725489999999" green="0.42745098040000001" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="130" id="G4Q-3t-ERg"/>
+                        <constraint firstAttribute="height" constant="51" id="wFa-mx-aXW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="23"/>
+                    <state key="normal" title="ورود">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </objects>
+            <point key="canvasLocation" x="3131.25" y="75"/>
+        </scene>
+        <!--خانه-->
+        <scene sceneID="K9w-hq-wBA">
+            <objects>
+                <viewController id="cw3-bA-Gru" customClass="HomeViewController" customModule="Guardian" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MWG-JA-i28">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sLp-zm-8Yf">
+                                <rect key="frame" x="71" y="372" width="239" height="137"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="خوش آمدید، userrrrrr2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFb-KR-o4x">
+                                        <rect key="frame" x="54" y="8" width="177" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="tkv-wG-916"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="میانگین رانندگی سالم:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pqj-gH-f3o">
+                                        <rect key="frame" x="8" y="55" width="223" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="Ghj-Vq-te2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9w-r8-3r2">
+                                        <rect key="frame" x="4" y="100" width="231" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="qEF-Eb-Iey"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4Fu-Gy-TNL">
+                                        <rect key="frame" x="8" y="6" width="38" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="P7c-YA-Adn"/>
+                                            <constraint firstAttribute="width" constant="38" id="iW5-Jn-v8k"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.78086880731735242" green="1" blue="0.70298619367711335" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="4Fu-Gy-TNL" firstAttribute="leading" secondItem="sLp-zm-8Yf" secondAttribute="leading" constant="8" id="9Y5-QT-8R7"/>
+                                    <constraint firstItem="zFb-KR-o4x" firstAttribute="leading" secondItem="4Fu-Gy-TNL" secondAttribute="trailing" constant="8" symbolic="YES" id="AaU-EB-8lY"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pqj-gH-f3o" secondAttribute="trailing" constant="8" id="EWd-gc-87z"/>
+                                    <constraint firstAttribute="bottom" secondItem="w9w-r8-3r2" secondAttribute="bottom" constant="8" id="HD4-DM-sK5"/>
+                                    <constraint firstItem="zFb-KR-o4x" firstAttribute="top" secondItem="sLp-zm-8Yf" secondAttribute="top" constant="8" id="OXh-Td-Hol"/>
+                                    <constraint firstAttribute="trailing" secondItem="zFb-KR-o4x" secondAttribute="trailing" constant="8" id="Qd1-iZ-i0e"/>
+                                    <constraint firstAttribute="width" constant="239" id="Qia-RL-yZP"/>
+                                    <constraint firstAttribute="trailing" secondItem="w9w-r8-3r2" secondAttribute="trailing" constant="4" id="T8E-Oo-h4F"/>
+                                    <constraint firstItem="Pqj-gH-f3o" firstAttribute="leading" secondItem="sLp-zm-8Yf" secondAttribute="leading" constant="8" id="Zlo-9x-FQx"/>
+                                    <constraint firstAttribute="height" constant="137" id="kh3-35-q4D"/>
+                                    <constraint firstItem="w9w-r8-3r2" firstAttribute="top" secondItem="Pqj-gH-f3o" secondAttribute="bottom" constant="8" id="og8-2F-g4f"/>
+                                    <constraint firstItem="w9w-r8-3r2" firstAttribute="leading" secondItem="sLp-zm-8Yf" secondAttribute="leading" constant="4" id="x0h-WN-Jpn"/>
+                                    <constraint firstItem="4Fu-Gy-TNL" firstAttribute="top" secondItem="sLp-zm-8Yf" secondAttribute="top" constant="5" id="x8U-Jm-MPl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HWS-sA-ytb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HWS-sA-ytb" firstAttribute="bottom" secondItem="sLp-zm-8Yf" secondAttribute="bottom" constant="10" id="3wy-Sf-nC8"/>
+                            <constraint firstItem="HWS-sA-ytb" firstAttribute="trailing" secondItem="sLp-zm-8Yf" secondAttribute="trailing" constant="10" id="Uha-MA-vLy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="خانه" id="jNh-58-KgK"/>
+                    <connections>
+                        <outlet property="cardView" destination="sLp-zm-8Yf" id="F4W-Ag-ob1"/>
+                        <outlet property="lblAvgSafeDriving" destination="w9w-r8-3r2" id="YAr-Sd-eXI"/>
+                        <outlet property="lblTitle" destination="zFb-KR-o4x" id="cy3-P6-vJy"/>
+                        <segue destination="chF-We-n6X" kind="show" id="oWe-ar-Dzj"/>
+                        <segue destination="gs5-rY-Zzy" kind="show" id="xBS-8i-k4o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Sr-Tf-HFh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4070.625" y="782.74647887323943"/>
+        </scene>
+        <!--بستن کمربند ایمنی-->
+        <scene sceneID="fGg-Kt-p4W">
+            <objects>
+                <viewController storyboardIdentifier="SeatBeltViewController" id="chF-We-n6X" customClass="SeatBeltViewController" customModule="Guardian" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k8d-xt-32S">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لطفا کمربند خود را ببندید!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVL-in-ALq">
+                                <rect key="frame" x="16" y="287.5" width="288" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="KBb-Uw-8Uw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car.2" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="S3h-09-FSJ">
+                                <rect key="frame" x="40" y="146.5" width="240" height="128"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="4rs-ZM-OTa"/>
+                                    <constraint firstAttribute="height" constant="130.5" id="Ajv-e2-fWX"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xk0-Yt-bI0">
+                                <rect key="frame" x="95" y="395" width="130" height="51"/>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.42745098040000001" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="8IS-S2-UfY"/>
+                                    <constraint firstAttribute="height" constant="51" id="YTw-S3-95O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="23"/>
+                                <state key="normal" title="بستم">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneTapped:" destination="chF-We-n6X" eventType="touchUpInside" id="FTH-Ry-SEV"/>
+                                    <action selector="primaryTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6aK-x3-HOw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NMq-NZ-arB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="S3h-09-FSJ" firstAttribute="top" secondItem="NMq-NZ-arB" secondAttribute="top" constant="101" id="2WS-TO-y6P"/>
+                            <constraint firstItem="Xk0-Yt-bI0" firstAttribute="top" secondItem="GVL-in-ALq" secondAttribute="bottom" constant="65.5" id="RnQ-zg-iv9"/>
+                            <constraint firstItem="Xk0-Yt-bI0" firstAttribute="centerX" secondItem="k8d-xt-32S" secondAttribute="centerX" id="aHW-LB-BBa"/>
+                            <constraint firstItem="GVL-in-ALq" firstAttribute="top" secondItem="S3h-09-FSJ" secondAttribute="bottom" constant="12" id="bW5-qe-0Wt"/>
+                            <constraint firstItem="S3h-09-FSJ" firstAttribute="centerX" secondItem="k8d-xt-32S" secondAttribute="centerX" id="d9Y-rj-jM1"/>
+                            <constraint firstItem="GVL-in-ALq" firstAttribute="leading" secondItem="NMq-NZ-arB" secondAttribute="leading" constant="16" id="w6d-hI-USB"/>
+                            <constraint firstItem="NMq-NZ-arB" firstAttribute="trailing" secondItem="GVL-in-ALq" secondAttribute="trailing" constant="16" id="zid-6k-Vwn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="بستن کمربند ایمنی" id="4Gj-vK-60a"/>
+                    <connections>
+                        <outlet property="btnDone" destination="Xk0-Yt-bI0" id="pvV-FT-y6F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bUF-jR-V0W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4931.25" y="782.74647887323943"/>
+        </scene>
+        <!--تنظیمات-->
+        <scene sceneID="r8m-hv-0u3">
+            <objects>
+                <viewController id="bbc-V1-KGX" customClass="SettingsViewController" customModule="Guardian" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6iM-Ca-ugS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="حالت خطر" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZL7-Mb-ecW">
+                                <rect key="frame" x="85" y="118" width="219" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="YkA-oN-kyT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تنظیمات مسیریابی" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="npJ-Hy-7AX">
+                                <rect key="frame" x="16" y="64" width="288" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="ieg-Nf-Qcy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="با فعال‌سازی گزینه‌ی فوق، هنگام مسیریابی، پیام‌های صوتی پخش خواهند شد." textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Vv-nm-7pv">
+                                <rect key="frame" x="16" y="163" width="288" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="ujf-5T-tQT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sLM-fW-pHx">
+                                <rect key="frame" x="16" y="118" width="49" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="1dm-9c-15r"/>
+                                    <constraint firstAttribute="width" constant="47" id="YFZ-84-lJ5"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="voiceNotifSwitchChanged:" destination="bbc-V1-KGX" eventType="valueChanged" id="fmO-oR-r7F"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRF-1K-Mwe">
+                                <rect key="frame" x="80" y="442" width="160" height="51"/>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.42745098040000001" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="jqH-D7-DBa"/>
+                                    <constraint firstAttribute="height" constant="51" id="qYp-Hd-dOQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="23"/>
+                                <state key="normal" title="خروج از حساب">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutTapped:" destination="bbc-V1-KGX" eventType="touchUpInside" id="ecd-Oz-kez"/>
+                                    <action selector="websiteClicked:" destination="R5w-Hn-4Ht" eventType="touchUpInside" id="DLj-8j-oHe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fYb-1z-uev"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZL7-Mb-ecW" firstAttribute="leading" secondItem="sLM-fW-pHx" secondAttribute="trailing" constant="22" id="9VM-YM-mRb"/>
+                            <constraint firstItem="fYb-1z-uev" firstAttribute="trailing" secondItem="npJ-Hy-7AX" secondAttribute="trailing" constant="16" id="9m4-HJ-4BQ"/>
+                            <constraint firstItem="ZL7-Mb-ecW" firstAttribute="top" secondItem="fYb-1z-uev" secondAttribute="top" constant="74" id="CZN-hk-5i3"/>
+                            <constraint firstItem="9Vv-nm-7pv" firstAttribute="top" secondItem="ZL7-Mb-ecW" secondAttribute="bottom" constant="8" symbolic="YES" id="JRG-Gq-UlB"/>
+                            <constraint firstItem="fYb-1z-uev" firstAttribute="bottom" secondItem="PRF-1K-Mwe" secondAttribute="bottom" constant="26" id="Jn1-ns-6qJ"/>
+                            <constraint firstItem="sLM-fW-pHx" firstAttribute="leading" secondItem="fYb-1z-uev" secondAttribute="leading" constant="16" id="ONE-fY-XgC"/>
+                            <constraint firstItem="npJ-Hy-7AX" firstAttribute="top" secondItem="fYb-1z-uev" secondAttribute="top" constant="20" id="OPw-mB-YKo"/>
+                            <constraint firstItem="PRF-1K-Mwe" firstAttribute="centerX" secondItem="6iM-Ca-ugS" secondAttribute="centerX" id="Pa4-As-ehE"/>
+                            <constraint firstItem="fYb-1z-uev" firstAttribute="trailing" secondItem="9Vv-nm-7pv" secondAttribute="trailing" constant="16" id="Y5v-ru-um5"/>
+                            <constraint firstItem="sLM-fW-pHx" firstAttribute="top" secondItem="fYb-1z-uev" secondAttribute="top" constant="74" id="nWK-BP-L7m"/>
+                            <constraint firstItem="npJ-Hy-7AX" firstAttribute="leading" secondItem="fYb-1z-uev" secondAttribute="leading" constant="16" id="rwa-7o-ZIS"/>
+                            <constraint firstItem="fYb-1z-uev" firstAttribute="trailing" secondItem="ZL7-Mb-ecW" secondAttribute="trailing" constant="16" id="ubR-om-Ye5"/>
+                            <constraint firstItem="9Vv-nm-7pv" firstAttribute="leading" secondItem="fYb-1z-uev" secondAttribute="leading" constant="16" id="yZ6-mB-j4J"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="تنظیمات" id="IYc-iC-khs"/>
+                    <connections>
+                        <outlet property="btnLogout" destination="PRF-1K-Mwe" id="ljQ-An-liq"/>
+                        <outlet property="voiceNotifSwitch" destination="sLM-fW-pHx" id="ZId-jt-MNM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UJE-q3-1kq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5038.125" y="1536.9718309859154"/>
+        </scene>
+        <!--درباره‌ی ما-->
+        <scene sceneID="2se-cQ-9aL">
+            <objects>
+                <viewController storyboardIdentifier="AboutUsViewController" id="R5w-Hn-4Ht" customClass="AboutUsViewController" customModule="Guardian" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ihM-FK-OKd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="گاردین، محافظ رانندگی شما" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHH-zh-JJQ">
+                                <rect key="frame" x="16" y="275.5" width="288" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="iBv-O5-sMs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8Mp-Xx-5H4">
+                                <rect key="frame" x="40" y="133.5" width="240" height="129.5"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="7TD-Jt-bLr"/>
+                                    <constraint firstAttribute="height" constant="130.5" id="O9K-1x-qZ9"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vc6-tI-PUa">
+                                <rect key="frame" x="75" y="383.5" width="170" height="51"/>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.42745098040000001" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Npt-yu-umD"/>
+                                    <constraint firstAttribute="width" constant="170" id="tMw-vg-KrN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="23"/>
+                                <state key="normal" title="وب‌سایت ما">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="websiteClicked:" destination="R5w-Hn-4Ht" eventType="touchUpInside" id="sw3-qC-JMq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKj-4p-1HL">
+                                <rect key="frame" x="75" y="449.5" width="170" height="51"/>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.42745098040000001" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="JWM-1m-oXg"/>
+                                    <constraint firstAttribute="width" constant="170" id="R88-wG-rj7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BYekan" family="B Yekan" pointSize="23"/>
+                                <state key="normal" title="تماس با پشتیبانی">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="supportClicked:" destination="R5w-Hn-4Ht" eventType="touchUpInside" id="DbQ-Pr-vIj"/>
+                                    <action selector="websiteClicked:" destination="R5w-Hn-4Ht" eventType="touchUpInside" id="ceF-5w-3mb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AAN-fC-Ngf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fKj-4p-1HL" firstAttribute="top" secondItem="vc6-tI-PUa" secondAttribute="bottom" constant="15" id="2MH-xm-8Rc"/>
+                            <constraint firstItem="8Mp-Xx-5H4" firstAttribute="centerX" secondItem="ihM-FK-OKd" secondAttribute="centerX" id="3Hb-gD-cn6"/>
+                            <constraint firstItem="JHH-zh-JJQ" firstAttribute="top" secondItem="8Mp-Xx-5H4" secondAttribute="bottom" constant="12" id="6S4-GR-MUE"/>
+                            <constraint firstItem="JHH-zh-JJQ" firstAttribute="leading" secondItem="AAN-fC-Ngf" secondAttribute="leading" constant="16" id="IFS-qn-8fP"/>
+                            <constraint firstItem="8Mp-Xx-5H4" firstAttribute="top" secondItem="AAN-fC-Ngf" secondAttribute="top" constant="89" id="R4C-jM-OUa"/>
+                            <constraint firstItem="AAN-fC-Ngf" firstAttribute="trailing" secondItem="JHH-zh-JJQ" secondAttribute="trailing" constant="16" id="f07-uP-FLj"/>
+                            <constraint firstItem="vc6-tI-PUa" firstAttribute="top" secondItem="JHH-zh-JJQ" secondAttribute="bottom" constant="66" id="i8Y-Dy-5P3"/>
+                            <constraint firstItem="vc6-tI-PUa" firstAttribute="centerX" secondItem="ihM-FK-OKd" secondAttribute="centerX" id="mqY-VT-5hc"/>
+                            <constraint firstItem="fKj-4p-1HL" firstAttribute="centerX" secondItem="ihM-FK-OKd" secondAttribute="centerX" id="ygh-je-jiv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="درباره‌ی ما" id="9U6-0y-Raf"/>
+                    <connections>
+                        <outlet property="btnSupport" destination="fKj-4p-1HL" id="XNf-1X-sRg"/>
+                        <outlet property="btnWebsite" destination="vc6-tI-PUa" id="gCl-t0-LeO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iNZ-Go-Nea" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6033.75" y="2223.5915492957747"/>
+        </scene>
+        <!--خواب-->
+        <scene sceneID="xqC-5I-ip7">
+            <objects>
+                <viewController id="gs5-rY-Zzy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AxQ-Nb-eAd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="h17-70-hqp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="خواب" id="cJx-9w-tf2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fDm-ed-0ng" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5902.5" y="1442.9577464788733"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="O7s-dW-nkw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qA3-V7-W6K" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="phZ-4u-KWu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AXI-dT-GlU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fR8-R5-3Tq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2133.75" y="75"/>
+        </scene>
+        <!--خانه-->
+        <scene sceneID="tnH-0y-UaG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0so-0y-9MN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="خانه" image="house" catalog="system" id="wl2-cv-5Wt"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hMa-dX-yP5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cw3-bA-Gru" kind="relationship" relationship="rootViewController" id="qqt-Qy-slH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RIo-gb-pZy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3131" y="783"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="JtC-zO-b1t">
+            <objects>
+                <tabBarController storyboardIdentifier="idSbMainTabBar" automaticallyAdjustsScrollViewInsets="NO" id="1nY-ti-47R" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="S01-m5-mU3">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="0so-0y-9MN" kind="relationship" relationship="viewControllers" id="ylD-cf-APO"/>
+                        <segue destination="1Hm-P0-kcA" kind="relationship" relationship="viewControllers" id="neX-Ej-fkE"/>
+                        <segue destination="ewH-ex-cdU" kind="relationship" relationship="viewControllers" id="Fc2-ir-7P7"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sK0-6I-F2n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2134" y="783"/>
+        </scene>
+        <!--تنظیمات-->
+        <scene sceneID="C38-ep-SDJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Hm-P0-kcA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="تنظیمات" image="speedometer" catalog="system" id="QGG-yG-ue8"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8vr-XS-DrX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bbc-V1-KGX" kind="relationship" relationship="rootViewController" id="XJC-Xf-6Ih"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5sB-5W-3Zz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4040.625" y="1536.9718309859154"/>
+        </scene>
+        <!--درباره‌ی ما-->
+        <scene sceneID="15L-eA-atk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ewH-ex-cdU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="درباره‌ی ما" image="info.circle" catalog="system" id="Uoh-fi-mms"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1vj-XS-UMv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="R5w-Hn-4Ht" kind="relationship" relationship="rootViewController" id="gQ9-Ad-teG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dpx-0E-twW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5036.25" y="2223.5915492957747"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="car.2" catalog="system" width="128" height="72"/>
+        <image name="car.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="location.fill" catalog="system" width="128" height="121"/>
+        <image name="speedometer" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
